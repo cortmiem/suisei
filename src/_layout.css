@@ -477,6 +477,28 @@ svg, img {
     grid-auto-rows: min-content
 }
 
+.circle {
+    width: 48px;
+    border-radius: 50%;
+}
+
+.vi {
+    position: relative;
+    padding-bottom: 70%;
+    overflow: hidden;
+}
+
+.vi video {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    right: -200px;
+    width: calc(100% + 400px);
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 @media (min-width: 768px) {
     .md\:h-full {
         height: 100%
@@ -534,6 +556,11 @@ svg, img {
     .md\:auto-rows-min {
         grid-auto-rows: -webkit-min-content;
         grid-auto-rows: min-content
+    }
+    .vi {
+        position: relative;
+        padding-bottom: 45%;
+        overflow: hidden;
     }
 }
 
